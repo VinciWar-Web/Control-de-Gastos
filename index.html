@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="estilos.css">
+     <link rel="stylesheet" href="fuentes.css">
+     <title>Gastos Semanales</title>
+</head>
+<body>
+
+<div class="container">
+     <div  class="tituloPrincipal">
+          <p>Gasto Semanal</p>
+     </div>
+     <section class="contenido-principal">
+          <div class="contenido-padre">
+               <div class="contenido-primario">
+                    <p class="titulo">Añade tus gastos aqui</p>
+
+                    <form class="agregar-gasto" action="#">
+                         <div class="grupos">
+                              <label class="gasto-label" for="gasto">Gastos:</label>
+                              <input type="text" class="input-gastos" placeholder="Nombre Gasto">
+                         </div>
+
+                         <div class="grupos">
+                              <label class="cantidad-label" for="cantidad">Cantidad:</label>
+                              <input type="text" class="input-cantidad" placeholder="Cantidad en $">
+                         </div>
+
+                         <button type="submit" class="btn">Agregar</button>
+
+                    </form>
+               </div>
+
+               <div class="contenido-secundario">
+                    <p class="titulo">Listado</p>
+
+                    <div id="gastos">
+                         <ul class="list-group"></ul>
+                    </div>
+
+                    <div class="presupuesto">
+                         <div class="cajaPresupuesto">
+                             <p>Presupuesto: $ <span id="total"></span> </p>
+                         </div>
+
+                         <div class="cajaRestante">
+                             <p>Restante: $ <span id="restante"></span></p>
+                         </div>
+                     </div> 
+               </div>
+          </div>
+     </section>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
